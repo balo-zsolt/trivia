@@ -34,7 +34,7 @@ public class Game implements IGame {
       return (howManyPlayers() >= 2);
    }
 
-   public boolean add(String playerName) {
+   public void add(String playerName) {
 
 
       players.add(playerName);
@@ -44,7 +44,6 @@ public class Game implements IGame {
 
       System.out.println(playerName + " was added");
       System.out.println("They are player number " + players.size());
-      return true;
    }
 
    public int howManyPlayers() {
@@ -136,7 +135,7 @@ public class Game implements IGame {
 
       } else {
 
-         System.out.println("Answer was corrent!!!!");
+         System.out.println("Answer was correct!!!!");
          purses[currentPlayer]++;
          System.out.println(players.get(currentPlayer)
                             + " now has "
